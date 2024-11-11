@@ -1,0 +1,12 @@
+# To see errors
+kubectl describe pod <podname>
+
+# Deploy
+kubectl apply -f project.yaml
+
+# Undeploy
+kubectl delete svc spring-kubernetes-secret-tutorial
+kubectl delete deployment spring-kubernetes-secret-tutorial
+kubectl delete secret db-secret
+
+kubectl delete all --selector=app=spring-kubernetes-secret-tutorial
