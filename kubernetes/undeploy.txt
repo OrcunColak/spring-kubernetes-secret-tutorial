@@ -9,4 +9,6 @@ kubectl delete svc spring-kubernetes-secret-tutorial
 kubectl delete deployment spring-kubernetes-secret-tutorial
 kubectl delete secret db-secret
 
-kubectl delete all --selector=app=spring-kubernetes-secret-tutorial
+# all deletes resources of types pod, service, replicaset, deployment, etc.
+# Secrets are not included in all by default. To delete Secrets specifically, include secret in the command:
+kubectl delete all,secret --selector=app=spring-kubernetes-secret-tutorial
