@@ -16,4 +16,5 @@ kubectl apply -f project.yaml
 
 Go to
 http://localhost:8080/api/greeting/greet
-
+or
+http://localhost:8080/h2-console/

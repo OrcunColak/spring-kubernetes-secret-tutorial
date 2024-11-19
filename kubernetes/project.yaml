@@ -7,8 +7,8 @@ metadata:
   name: db-secret
 type: Opaque
 data:
-  DB_USERNAME: dXNlcm5hbWU=     # base64 encoded username
-  DB_PASSWORD: cGFzc3dvcmQ=     # base64 encoded password
+  DB_USERNAME: c2E=            # base64 encoded "sa"
+  DB_PASSWORD:                 # empty value, no password
 
 ---
 # Deployment Configuration
